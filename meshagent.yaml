@@ -4,7 +4,7 @@ name: chatbot
 image: chatbot
 command: python3 main.py
 ports:
-- num: *
+- num: "*"
   endpoints:
   - path: /chatbot
     identity: chatbot
