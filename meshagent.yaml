@@ -1,12 +1,11 @@
 kind: ServiceTemplate
 version: v1
 name: chatbot
-image: chatbot
 command: python3 main.py
 ports:
 - num: "*"
   endpoints:
-  - path: /chatbot
+  - path: /agent
     identity: chatbot
     type: meshagent.callable
   
