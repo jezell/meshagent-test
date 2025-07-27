@@ -4,10 +4,9 @@ name: chatbot
 command: python3 main.py
 variables:
 - name: "system_prompt"
-env:
+environment:
 - name: SYSTEM_PROMPT
   value: "{system_prompt}"
-
 ports:
 - num: "*"
   endpoints:
