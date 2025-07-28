@@ -1,4 +1,4 @@
-FROM meshagent/python-sdk:latest
+FROM meshagent/python-sdk-slim:latest
 
 COPY . /src
 
