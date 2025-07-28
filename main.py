@@ -3,10 +3,14 @@ from meshagent.api.services import ServiceHost
 from meshagent.openai import OpenAIResponsesAdapter
 import asyncio
 import os
+import logging
+
+
+logging.basicConfig(level=logging.INFO)
 
 system_prompt = os.getenv("SYSTEM_PROMPT")
 
-print(f"starting service with rule: {system_prompt}")
+print(f"starting service with rule: {system_prompt}", flush=True)
 
 host = ServiceHost()
 
