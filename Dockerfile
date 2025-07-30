@@ -1,6 +1,6 @@
 FROM meshagent/python-sdk-slim:latest
 
-RUN apt-get install -y curl
+RUN apt-get update && apt-get install -y curl
 
 COPY . /src
 
