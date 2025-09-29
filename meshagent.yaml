@@ -1,6 +1,7 @@
 kind: ServiceTemplate
 version: v1
-name: chatbot
+metadata:
+  name: chatbot
 command: python3 main.py
 variables:
 - name: "system_prompt"
